@@ -7,14 +7,16 @@ from src.preprocess import (
 
 from src.embedding_ranker import (
     get_embedding,
-    get_semantic_similarity,
+    get_semantic_similarities,
 )
 
 from src.consistency_scoring import (
     get_consistency_score,
 )
 
+# --------------------
 # Load JD
+# --------------------
 
 with open(
     "sample_jd.txt",
@@ -28,21 +30,21 @@ job_embedding = get_embedding(
     job_text
 )
 
+# --------------------
 # Load ranking
+# --------------------
 
 ranking_df = pd.read_csv(
     "outputs/job_aware_ranking.csv"
 )
 
-top100 = ranking_df.head(100).copy()
-
-candidate_ids = set(
-    top100["candidate_id"]
-)
-
-# Load candidates
+# --------------------
+# Load ALL candidates
+# --------------------
 
 candidate_lookup = {}
+candidate_texts = []
+candidate_ids = []
 
 with open(
     "data/raw/candidates.jsonl",
@@ -60,92 +62,164 @@ with open(
             candidate["candidate_id"]
         )
 
-        if candidate_id in candidate_ids:
+        candidate_lookup[
+            candidate_id
+        ] = candidate
 
-            candidate_lookup[
-                candidate_id
-            ] = candidate
+        candidate_ids.append(
+            candidate_id
+        )
 
-semantic_scores = {}
+        candidate_texts.append(
+            build_candidate_text(
+                candidate
+            )
+        )
+
+print(
+    "Computing semantic similarity for all candidates..."
+)
+
+# --------------------
+# Semantic scores
+# --------------------
+
+semantic_scores = (
+    get_semantic_similarities(
+        job_embedding,
+        candidate_texts,
+    )
+)
+
+semantic_dict = dict(
+    zip(
+        candidate_ids,
+        semantic_scores,
+    )
+)
+
+ranking_df[
+    "semantic_score"
+] = (
+    ranking_df[
+        "candidate_id"
+    ].map(
+        semantic_dict
+    )
+)
+
+# --------------------
+# Stage 1 Retrieval
+# --------------------
+
+ranking_df[
+    "retrieval_score"
+] = (
+    0.70
+    * ranking_df[
+        "recruiter_score"
+    ]
+    +
+    0.30
+    * (
+        ranking_df[
+            "semantic_score"
+        ]
+        * 10
+    )
+)
+
+top1000 = (
+    ranking_df
+    .sort_values(
+        "retrieval_score",
+        ascending=False,
+    )
+    .head(1000)
+    .copy()
+)
+
+print(
+    "Computing consistency scores..."
+)
+
+# --------------------
+# Consistency
+# --------------------
+
 consistency_scores = {}
 
-for candidate_id in candidate_ids:
+for candidate_id in top1000[
+    "candidate_id"
+]:
 
-    candidate = candidate_lookup[
+    candidate = (
+        candidate_lookup[
+            candidate_id
+        ]
+    )
+
+    consistency_scores[
         candidate_id
-    ]
-
-    candidate_text = (
-        build_candidate_text(
-            candidate
-        )
-    )
-
-    semantic_score = (
-        get_semantic_similarity(
-            job_embedding,
-            candidate_text,
-        )
-    )
-
-    consistency_score = (
+    ] = (
         get_consistency_score(
             candidate
         )
     )
 
-    semantic_scores[
-        candidate_id
-    ] = semantic_score
-
-    consistency_scores[
-        candidate_id
-    ] = consistency_score
-
-# Add features
-
-top100["semantic_score"] = (
-    top100["candidate_id"]
-    .map(semantic_scores)
+top1000[
+    "consistency_score"
+] = (
+    top1000[
+        "candidate_id"
+    ].map(
+        consistency_scores
+    )
 )
 
-top100["consistency_score"] = (
-    top100["candidate_id"]
-    .map(consistency_scores)
-)
+# --------------------
+# Final Hybrid Score
+# --------------------
 
-# V0.2 Hybrid Score
-
-top100["hybrid_score"] = (
+top1000[
+    "hybrid_score"
+] = (
     0.70
-    * top100["recruiter_score"]
+    * top1000[
+        "recruiter_score"
+    ]
     +
     0.20
     * (
-        top100["semantic_score"]
+        top1000[
+            "semantic_score"
+        ]
         * 10
     )
     +
     0.10
     * (
-        top100["consistency_score"]
+        top1000[
+            "consistency_score"
+        ]
         * 10
     )
 )
 
-# Sort
-
-top100 = top100.sort_values(
-    "hybrid_score",
-    ascending=False,
+top100 = (
+    top1000
+    .sort_values(
+        "hybrid_score",
+        ascending=False,
+    )
+    .head(100)
+    .copy()
 )
 
 top100["rank"] = range(
     1,
     len(top100) + 1
 )
-
-# Save
 
 top100.to_csv(
     "outputs/hybrid_ranking_v2.csv",
