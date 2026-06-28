@@ -1,0 +1,605 @@
+============================================================
+Candidate: CAND_0088025
+Rank: 1
+Hybrid Score: 8.9333
+Semantic Score: 0.6142
+Consistency Score: 0.3479
+Job Match Score: 7.1000
+
+Reasons:
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Owned the end-to-end ranking pipeline at a recommendations-heavy consumer product: candidate sourcing → embedding generation (using a fine-tuned BGE-large) → Pinecone retrieval → learning-to-rank re-scoring (XGBoost) → behavioral-signal integration"
+- "The hardest part wasn't the ML — it was the evaluation: building offline metrics that actually predicted what the recommendation would do to live engagement"
+- "Owned the end-to-end ranking pipeline at a recommendations-heavy consumer product: candidate sourcing → embedding generation (using a fine-tuned BGE-large) → Pinecone retrieval → learning-to-rank re-scoring (XGBoost) → behavioral-signal integration"
+
+============================================================
+Candidate: CAND_0010770
+Rank: 2
+Hybrid Score: 8.9069
+Semantic Score: 0.5985
+Consistency Score: 0.3459
+Job Match Score: 6.9500
+
+Reasons:
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built semantic search systems
+- Worked on ranking systems
+
+Profile Evidence:
+- "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM"
+- "Developed a semantic search feature for an internal knowledge base of ~500K documents"
+- "Used sentence-transformers (all-MiniLM-L6-v2 initially, later upgraded to bge-base) with FAISS for fast nearest-neighbor retrieval"
+
+============================================================
+Candidate: CAND_0018722
+Rank: 3
+Hybrid Score: 8.7893
+Semantic Score: 0.6553
+Consistency Score: 0.2476
+Job Match Score: 6.2500
+
+Reasons:
+- High semantic similarity with the job description
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience operating production ML systems
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built semantic search systems
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Developed a semantic search feature for an internal knowledge base of ~500K documents"
+- "Used sentence-transformers (all-MiniLM-L6-v2 initially, later upgraded to bge-base) with FAISS for fast nearest-neighbor retrieval"
+- "Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months"
+
+============================================================
+Candidate: CAND_0092278
+Rank: 4
+Hybrid Score: 8.6312
+Semantic Score: 0.5869
+Consistency Score: 0.1984
+Job Match Score: 8.0500
+
+Reasons:
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Built and shipped a production recommendation system at a marketplace product, going from offline experimentation to live A/B test in 5 months"
+- "The system combined collaborative filtering (matrix factorization), content-based features (TF-IDF + sentence-transformer embeddings), and a behavioral re-ranking layer"
+- "Built and shipped a production recommendation system at a marketplace product, going from offline experimentation to live A/B test in 5 months"
+
+============================================================
+Candidate: CAND_0018499
+Rank: 5
+Hybrid Score: 8.6296
+Semantic Score: 0.5718
+Consistency Score: 0.3320
+Job Match Score: 7.7500
+
+Reasons:
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Built a RAG-based ranking pipeline serving 50M+ queries per month for an internal recruiter-facing search product"
+- "The architecture combined BM25 + dense retrieval (BGE embeddings, FAISS HNSW) with an LLM-based re-ranker on the top-50, falling back to a learning-to-rank model when latency budget was tight"
+- "Designed the offline evaluation framework from scratch — NDCG, MRR, recall@K calibrated against online A/B engagement metrics"
+
+============================================================
+Candidate: CAND_0065878
+Rank: 6
+Hybrid Score: 8.6016
+Semantic Score: 0.6018
+Consistency Score: 0.3910
+Job Match Score: 5.7000
+
+Reasons:
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months"
+- "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking"
+- "The system uses item-item similarity (via sentence-transformer embeddings) for cold starts and a gradient-boosted model trained on engagement signals for warm users"
+
+============================================================
+Candidate: CAND_0093912
+Rank: 7
+Hybrid Score: 8.5384
+Semantic Score: 0.5802
+Consistency Score: 0.5040
+Job Match Score: 6.2500
+
+Reasons:
+- Strong consistency between experience and profile evidence
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Built semantic search systems
+- Worked on ranking systems
+
+Profile Evidence:
+- "Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months"
+- "Developed a semantic search feature for an internal knowledge base of ~500K documents"
+- "Used sentence-transformers (all-MiniLM-L6-v2 initially, later upgraded to bge-base) with FAISS for fast nearest-neighbor retrieval"
+
+============================================================
+Candidate: CAND_0055992
+Rank: 8
+Hybrid Score: 8.4306
+Semantic Score: 0.6180
+Consistency Score: 0.3765
+Job Match Score: 6.8000
+
+Reasons:
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Built semantic search systems
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Implemented a RAG-based customer support chatbot integrated with our existing ticketing system"
+- "Built the document ingestion pipeline (chunking, embedding via OpenAI embeddings, storing in Pinecone) and the answer-generation layer (initially GPT-4, then a fine-tuned smaller model for cost control)"
+- "Designed the evaluation framework with both automatic metrics (BLEU, ROUGE) and human-in-the-loop quality scores"
+
+============================================================
+Candidate: CAND_0039754
+Rank: 9
+Hybrid Score: 8.3821
+Semantic Score: 0.5534
+Consistency Score: 0.4293
+Job Match Score: 8.1500
+
+Reasons:
+- Strong consistency between experience and profile evidence
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+- Experience operating production ML systems
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Built semantic search systems
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Owned the end-to-end ranking pipeline at a recommendations-heavy consumer product: candidate sourcing → embedding generation (using a fine-tuned BGE-large) → Pinecone retrieval → learning-to-rank re-scoring (XGBoost) → behavioral-signal integration"
+- "The hardest part wasn't the ML — it was the evaluation: building offline metrics that actually predicted what the recommendation would do to live engagement"
+- "Owned the design and rollout of a large-scale semantic search system serving an internal corpus of 35M+ items"
+
+============================================================
+Candidate: CAND_0083307
+Rank: 10
+Hybrid Score: 8.2742
+Semantic Score: 0.6664
+Consistency Score: 0.3264
+Job Match Score: 6.7000
+
+Reasons:
+- High semantic similarity with the job description
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+- Experience operating production ML systems
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Built semantic search systems
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Implemented a RAG-based customer support chatbot integrated with our existing ticketing system"
+- "Built the document ingestion pipeline (chunking, embedding via OpenAI embeddings, storing in Pinecone) and the answer-generation layer (initially GPT-4, then a fine-tuned smaller model for cost control)"
+- "Designed the evaluation framework with both automatic metrics (BLEU, ROUGE) and human-in-the-loop quality scores"
+
+============================================================
+Candidate: CAND_0086151
+Rank: 11
+Hybrid Score: 8.2720
+Semantic Score: 0.6179
+Consistency Score: 0.4772
+Job Match Score: 7.4500
+
+Reasons:
+- Strong consistency between experience and profile evidence
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Designed evaluation frameworks
+- Built semantic search systems
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months"
+- "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking"
+- "The system uses item-item similarity (via sentence-transformer embeddings) for cold starts and a gradient-boosted model trained on engagement signals for warm users"
+
+============================================================
+Candidate: CAND_0030953
+Rank: 12
+Hybrid Score: 8.1994
+Semantic Score: 0.6942
+Consistency Score: 0.3080
+Job Match Score: 5.9000
+
+Reasons:
+- High semantic similarity with the job description
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+- Experience operating production ML systems
+
+Evidence:
+- Built recommendation systems
+- Used FAISS for vector retrieval
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Built semantic search systems
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM"
+- "Built a content recommendation system serving 10M+ users that combined collaborative filtering with content-based ranking"
+- "The system uses item-item similarity (via sentence-transformer embeddings) for cold starts and a gradient-boosted model trained on engagement signals for warm users"
+
+============================================================
+Candidate: CAND_0064326
+Rank: 13
+Hybrid Score: 8.0919
+Semantic Score: 0.6255
+Consistency Score: 0.2958
+Job Match Score: 5.3000
+
+Reasons:
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months"
+- "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM"
+- "Implemented a RAG-based customer support chatbot integrated with our existing ticketing system"
+
+============================================================
+Candidate: CAND_0046064
+Rank: 14
+Hybrid Score: 8.0670
+Semantic Score: 0.5832
+Consistency Score: 0.2996
+Job Match Score: 7.7500
+
+Reasons:
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Built the data curation pipeline that generated 200K high-quality preference pairs from recruiter labels, plus the eval harness using both ranking metrics and human-quality scores"
+- "Built a RAG-based ranking pipeline serving 50M+ queries per month for an internal recruiter-facing search product"
+- "The architecture combined BM25 + dense retrieval (BGE embeddings, FAISS HNSW) with an LLM-based re-ranker on the top-50, falling back to a learning-to-rank model when latency budget was tight"
+
+============================================================
+Candidate: CAND_0000031
+Rank: 15
+Hybrid Score: 8.0487
+Semantic Score: 0.6559
+Consistency Score: 0.2128
+Job Match Score: 5.3500
+
+Reasons:
+- High semantic similarity with the job description
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Designed evaluation frameworks
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM"
+- "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM"
+- "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM"
+
+============================================================
+Candidate: CAND_0010685
+Rank: 16
+Hybrid Score: 7.8107
+Semantic Score: 0.6470
+Consistency Score: 0.3987
+Job Match Score: 5.5500
+
+Reasons:
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience operating production ML systems
+
+Evidence:
+- Built recommendation systems
+- Built ML pipelines with Kubeflow
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Built semantic search systems
+- Used MLflow in production
+- Worked on ranking systems
+
+Profile Evidence:
+- "Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months"
+- "Developed a semantic search feature for an internal knowledge base of ~500K documents"
+- "Used sentence-transformers (all-MiniLM-L6-v2 initially, later upgraded to bge-base) with FAISS for fast nearest-neighbor retrieval"
+
+============================================================
+Candidate: CAND_0053695
+Rank: 17
+Hybrid Score: 7.7758
+Semantic Score: 0.6452
+Consistency Score: 0.4164
+Job Match Score: 5.3500
+
+Reasons:
+- Strong consistency between experience and profile evidence
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Used FAISS for vector retrieval
+- Designed evaluation frameworks
+- Built semantic search systems
+- Worked on ranking systems
+
+Profile Evidence:
+- "Trained and shipped multiple ranking models for our product's discovery feed using XGBoost and LightGBM"
+- "Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months"
+- "Developed a semantic search feature for an internal knowledge base of ~500K documents"
+
+============================================================
+Candidate: CAND_0008425
+Rank: 18
+Hybrid Score: 7.6567
+Semantic Score: 0.5498
+Consistency Score: 0.4882
+Job Match Score: 6.5500
+
+Reasons:
+- Strong consistency between experience and profile evidence
+- Strong match to job requirements
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+- Experience operating production ML systems
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Built semantic search systems
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Owned the design and rollout of a large-scale semantic search system serving an internal corpus of 35M+ items"
+- "Migrated the existing BM25-only retrieval to a hybrid setup combining sparse and dense vectors (sentence-transformers, MPNet-base initially, later fine-tuned BGE-large for our domain)"
+- "The new system reduced p95 retrieval latency by 60% while improving NDCG@10 by 18% on our held-out eval set"
+
+============================================================
+Candidate: CAND_0028793
+Rank: 19
+Hybrid Score: 7.6228
+Semantic Score: 0.6871
+Consistency Score: 0.4735
+Job Match Score: 4.8000
+
+Reasons:
+- High semantic similarity with the job description
+- Strong consistency between experience and profile evidence
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Used FAISS for vector retrieval
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Built semantic search systems
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Developed a semantic search feature for an internal knowledge base of ~500K documents"
+- "Used sentence-transformers (all-MiniLM-L6-v2 initially, later upgraded to bge-base) with FAISS for fast nearest-neighbor retrieval"
+- "Implemented a RAG-based customer support chatbot integrated with our existing ticketing system"
+
+============================================================
+Candidate: CAND_0031593
+Rank: 20
+Hybrid Score: 7.5933
+Semantic Score: 0.6635
+Consistency Score: 0.4074
+Job Match Score: 5.3500
+
+Reasons:
+- High semantic similarity with the job description
+- Strong consistency between experience and profile evidence
+- Experience building ranking systems
+- Experience building recommendation systems
+- Experience with retrieval and semantic search systems
+- Experience with embeddings and RAG pipelines
+- Experience designing evaluation frameworks
+
+Evidence:
+- Built recommendation systems
+- Built learning-to-rank systems
+- Built RAG pipelines
+- Designed evaluation frameworks
+- Used Pinecone vector database
+- Worked with embeddings
+- Worked on ranking systems
+
+Profile Evidence:
+- "Owned the ranking layer for an e-commerce search product, evolving it from a hand-tuned scoring function to a learning-to-rank model over 9 months"
+- "Implemented a RAG-based customer support chatbot integrated with our existing ticketing system"
+- "Built the document ingestion pipeline (chunking, embedding via OpenAI embeddings, storing in Pinecone) and the answer-generation layer (initially GPT-4, then a fine-tuned smaller model for cost control)"
+

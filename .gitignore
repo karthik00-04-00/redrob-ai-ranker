@@ -1,10 +1,25 @@
+# Virtual Environment
 .venv/
+
+# Python
 __pycache__/
 *.pyc
 
+# Dataset
 data/raw/
+data/processed/
+*.jsonl
 
-outputs/*.csv
-outputs/*.txt
+# Large outputs
+outputs/ranking_v1.csv
+outputs/job_aware_ranking.csv
+outputs/semantic_ranking.csv
+outputs/hybrid_ranking.csv
 
-.ipynb_checkpoints/
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
